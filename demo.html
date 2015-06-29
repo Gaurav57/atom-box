@@ -1,0 +1,34 @@
+<!doctype>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="popup.css">
+		<script type="text/javascript" src="popup.js"></script>
+		<script type="text/javascript">
+		$('#openModal').popupModal('dumbBoxWrap');
+		</script>
+		
+	</head>
+	<body>
+		Basic HTML content
+		<a id="openModal" href="#">Open</a>
+
+
+		<div class="dumbBoxWrap"> 
+			<div class="dumbBoxOverlay"></div>
+			<div class="vertical-offset">
+				<div class="dumbBox">
+					<a id="closeModal"><img src="modal_close.png"/></a>
+				 	<div class="modalHeader">
+				 		<h4>Gaurav Vashishtha</h4>
+				 		<span>This is demo of popup</span>
+				 	</div>
+				 	<div class="modalContent">
+				 	</div>
+				 </div> 
+			</div> 
+		</div>
+	</body>
+</html>
