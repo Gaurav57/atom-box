@@ -1,17 +1,16 @@
-$.fn.popupModal = function(p,o={}){
-	/*init: function(){
-		$('.'+p).show();
+(function($) {
+	var setting ={
+		headerColor: '#F08080',
 	};
-	setting: function(){
-		alert('Here are settingsss');
-	},
-	this.init;*/
-};
-$(document).ready(function() {
-	$('#openModal').click(function() {
-		$('.dumbBoxWrap').show();
-	});         //Hide modal box         
-	$('#closeModal').click(function() {
-		$('.dumbBoxWrap').hide();
-	}); 
-}); 
+	var popObj = '';
+	$.fn.popupModal = function(p,o){
+		popObj = $('#'+p);
+		$(this).popupSetting(o);
+		popObj.show();
+	};
+	$.fn.popupSetting = function(o){
+		console.log(setting.headerColor);
+		if(popObj != 'undefined')
+			popObj.find('div:eq(1)').find('div:eq(0)').css('background-color', setting.headerColor);
+	};
+})(jQuery);

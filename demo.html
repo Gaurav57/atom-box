@@ -7,7 +7,11 @@
 		<link rel="stylesheet" type="text/css" href="css/popup.css">
 		<script type="text/javascript" src="js/popup.js"></script>
 		<script type="text/javascript">
-		$('#openModal').popupModal('dumbBoxWrap');
+		$(document).ready(function(){	
+			$('#openModal').click(function(){
+				$(this).popupModal('atomBox');
+			});	
+		});
 		</script>
 		
 	</head>
@@ -15,8 +19,8 @@
 		Basic HTML content
 		<a id="openModal" href="#">Open</a>
 
-
-		<div class="dumbBoxWrap"> 
+<!-- Pop up modal HTML start-->
+		<div class="dumbBoxWrap" id="atomBox"> 
 			<div class="dumbBoxOverlay"></div>
 			<div class="vertical-offset">
 				<div class="dumbBox">
@@ -30,5 +34,6 @@
 				 </div> 
 			</div> 
 		</div>
+<!-- Pop up modal HTML end-->
 	</body>
 </html>
