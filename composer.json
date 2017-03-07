@@ -1,0 +1,16 @@
+{
+    "name":        "gaurav57/atom-box",
+    "description": "Popup modal and lightbox support any website without using bootstrap",
+    "type":        "library",
+    "license":     "MIT",
+    "keywords":    ["html", "css", "popup", "lightbox"],
+    "authors": [
+        {
+            "name": "Gaurav Vashishtha",
+            "email": "vashishtha.gaurav5@gmail.com"
+        }
+    ],
+    "require": {
+        "atom-box/core": "3.0.*@dev"
+    }
+}
